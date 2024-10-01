@@ -75,23 +75,38 @@ export default function Footer() {
                 </div>
             </div>
 
-            <div className=" max-h-7 min-h-4 py-12 md:py-8 w-full sm:w-[80%] flex md:flex-row flex-col md:justify-between items-center justify-center  gap-4 text-text font-semibold  text-base   ">
-                <h1 className=" text-gray-700/90 dark:text-[#888] " >
+            <div
+                className=" max-h-7 min-h-4 py-12 md:py-8 w-full sm:w-[80%] flex md:flex-row flex-col md:justify-between items-center justify-center  gap-4 text-text font-semibold  text-base   ">
+                <h1 className=" text-gray-700/90 dark:text-[#888] ">
                     Created by {" "}
-                    <Link href={'https://www.linkedin.com/in/harsh3dev/'} target="_blank" className="font-semibold hover:text-accent transition-all ease-linear scale-[0.2] " >
+                    <Link href={'https://www.linkedin.com/in/harsh3dev/'} target="_blank"
+                          className="font-semibold hover:text-accent transition-all ease-linear scale-[0.2] ">
                         Harsh Pandey
                     </Link>
                     {" "}
                     &
                     {" "}
-                    <Link href={'https://www.linkedin.com/in/yash-gupta-64956b246/'} target="_blank" className="font-semibold hover:text-accent transition-all ease-linear scale-[0.2] " >
+                    <Link href={'https://www.linkedin.com/in/yash-gupta-64956b246/'} target="_blank"
+                          className="font-semibold hover:text-accent transition-all ease-linear scale-[0.2] ">
                         Yash Gupta
                     </Link>
                 </h1>
-                <span className=" flex justify-center items-center gap-5   text-xl group ">
-                    <Link target="_blank" href="/" className=" opacity-60 hover:opacity-100 " ><FaProductHunt /></Link>
-                    <Link target="_blank" href="/" className=" opacity-60 hover:opacity-100 " ><FaXTwitter /></Link>
-                    <Link target="_blank" href="/" className=" opacity-60 hover:opacity-100 " ><FaGithub /></Link>
+                <span className="flex justify-center items-center gap-5 text-xl group">
+                    <Link href="https://www.producthunt.com/posts/devmatchups" passHref legacyBehavior>
+                        <a target="_blank" className="opacity-60 hover:opacity-100">
+                            <FaProductHunt/>
+                        </a>
+                    </Link>
+                    <Link href="https://twitter.com/devmatchups" passHref legacyBehavior>
+                        <a target="_blank" className="opacity-60 hover:opacity-100">
+                            <FaXTwitter/>
+                        </a>
+                    </Link>
+                    <Link href="https://github.com/harsh3dev/devmatchups" passHref legacyBehavior>
+                        <a target="_blank" className="opacity-60 hover:opacity-100">
+                            <FaGithub/>
+                        </a>
+                    </Link>
                 </span>
             </div>
         </footer>
